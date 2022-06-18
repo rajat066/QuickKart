@@ -1,10 +1,6 @@
 ﻿@model QuickKartMVC.Models.User
 @{
     ViewBag.Title = "Index";
-    if(Session["userId"] == null)
-    {
-        Response.Redirect("~/Login/Index");
-    }
 }
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -55,8 +51,8 @@
                     </td>
                     <td></td>
                 </tr>
+                <tr><td><h4 style="color:red">Invalid EmailId or Password</h4></td></tr>
             </table>
         }
     </div>
-    <script src="~/Scripts/jquery-1.4.4.min.js"></script>
 </body>

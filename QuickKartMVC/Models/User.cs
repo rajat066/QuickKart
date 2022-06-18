@@ -22,10 +22,10 @@ namespace QuickKartMVC.Models
             this.PurchaseDetails = new HashSet<PurchaseDetail>();
         }
     
-        [Required]
+        [Required(ErrorMessage ="Email Id is required")]
         [DisplayName("Email Id")]
         public string EmailId { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Password is mandatory")]
         [DisplayName("Password")]
         [DataType(DataType.Password)]
         public string UserPassword { get; set; }
