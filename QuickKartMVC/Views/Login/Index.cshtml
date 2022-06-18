@@ -1,0 +1,44 @@
+﻿@model QuickKartMVC.Models.User
+ @{
+    ViewBag.Title = "Index";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <style>
+        #login-div {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            right: 40%;
+            border: 1px solid #ff0000;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-div">
+        <table>
+            <tr>
+                <td>@Html.LabelFor(a => a.EmailId)</td>
+                <td>@Html.TextBoxFor(a => a.EmailId)</td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(a => a.UserPassword)
+                </td>
+                <td>
+                    @Html.TextBoxFor(a => a.UserPassword)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login" />
+                    <input type="reset" value="Clear">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>

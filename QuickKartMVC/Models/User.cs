@@ -11,7 +11,9 @@ namespace QuickKartMVC.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,7 +22,12 @@ namespace QuickKartMVC.Models
             this.PurchaseDetails = new HashSet<PurchaseDetail>();
         }
     
+        [Required]
+        [DisplayName("Email Id")]
         public string EmailId { get; set; }
+        [Required]
+        [DisplayName("Password")]
+        [DataType(DataType.Password)]
         public string UserPassword { get; set; }
         public Nullable<byte> RoleId { get; set; }
         public string Gender { get; set; }
