@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKartMVC", "QuickKartMVC.csproj", "{35C149C9-3A68-4C35-9C27-3BFBB5CDFF3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C149C9-3A68-4C35-9C27-3BFBB5CDFF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C149C9-3A68-4C35-9C27-3BFBB5CDFF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C149C9-3A68-4C35-9C27-3BFBB5CDFF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C149C9-3A68-4C35-9C27-3BFBB5CDFF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39747A08-A98D-4795-9545-BFB3FA0D6339}
+	EndGlobalSection
+EndGlobal
